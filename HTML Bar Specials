@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html>
+<head>
+</style>
+div.container {
+    width: 75%;
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-top: 0;
+	padding-bottom: 0;
+    
+}
+
+header {
+    padding-bottom: 0px;
+	padding-top: 0px;
+    color: black;
+	border-bottom: solid grey;
+	border-bottom-width: 1px;
+    clear: left;
+	font-size: 18px;
+	text-align: center;
+	font-family: "Courier New", Courier;
+}
+
+footer {
+    padding: 1em;
+    color: black;
+    border-top: solid grey;
+    	border-top-width: 1px
+	text-align: left;
+	background-repeat: repeat-x;
+	background-image:url("foam.jpg")
+    
+}
+
+
+nav {
+    float: left;
+    max-width: 5px;
+    margin: 0;
+    padding: 0;
+	padding-top: 30px;
+	padding-left: 75px;
+	
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+	
+}
+   
+nav ul a {
+    text-decoration: none;
+	color: black;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+	font-size: 25px;
+	
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #FAD7A0;
+    color: white;
+	max-width: 150px;
+}
+
+article {
+    margin-left: 250px;
+	margin-top: 0px;
+    border-left: 1px solid grey;
+	padding-bottom: 150px;
+    overflow: hidden;
+	text-align: justify;
+	font-size:15px;
+	padding-left: 10px;
+	
+	
+}
+
+article h1 {
+	font-size: 20px;
+}
+
+.float_col1 {
+	float:left;
+	width: 450px;
+}
+
+.float_col2 {
+	float:right;
+	width: 400px;
+	margin-right: 175px;
+	
+
+}
+
+section {
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+	
+	<h1>Booze Clues: <i> The Place To Find Your Booze</i></h1></div>
+</header>
+  
+<nav>
+  <ul>
+    <li><a href="GreenRoom.html">Green Room</a></li>
+    <li><a href="#">Peabodys</a></li>
+    <li><a href="#">Hobies</a></li>
+	<li><a href="Monopole.html">Monopole</a></li>
+	<li><a href="518.html">Five1Eight</a></li>
+	<li><a href="AboutUs.html">About Us</a></li>
+  </ul>
+</nav>
+
+<article>
+	<div class="float_col1">
+  <h1>Hobies</h1>
+  Hobie's Sports Den is a full service restaurant and bar in downtown Plattsburgh.
+ Hobie's has 10 beers on tap, pizza, burgers, pasta specials everyday, and much more.
+Guests can come for lunch, dinner, or a drink with outside seating offered when weather 
+permits. Hobie's offers take out or dine in waiter service for customers. The bar 
+ has a pool table and the pleasant vibe creates a warm atmosphere.
+ 
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="Hobies.jpg" style="width:100%" height="300px">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="Hobies(2).jpg" style="width:100%" height="300px">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Hobies(3).jpg" style="width:100%" height="295px">
+ </div> 
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+ 
+ 
+</div>
+
+<div class="float_col2"><h1>Bar Specials </h1>
+	<p>Sundays - $5 Boody Marys & $1 off Burgers all day</p>
+	<p>Mondays - $4 Margaritas & $9 Veggie Nachos all day</p>
+	<p>Tuesdays - Buy a Pint and get a piece of pizza FREE! </p>
+	<p>Wednesdays - 10 wings and a pint for $10, $2 beers(Bars choice)</p>
+	<p>Thursdays - $2 OFF large pizzas, $1 OFF Mixed drinks until Midnight</p>
+	<p> *Soup and Meal Specials Everyday*</p>
+	</div>
+
+<footer>
+	<a href="#">Contact Us</a>
+	<p><a href="#">Bar Hours</a></p>
+	
+	
+</footer>
+
+</div>
+
+</body>
+</html>
+
+
+______________________________________________________________________________________________________________________________________
+***518.html PAGE***
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header {
+    padding-bottom: 10px;
+	padding-top: 10px;
+    color: white;
+    background-color: #590000;
+    clear: left;
+	font-size: 15px;
+	text-align: center;
+}
+
+footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+	border-top-width: 1px;
+	text-align: left;
+    	background-repeat: repeat-x;
+	background-image:url("foam.jpg")
+}
+
+img header {
+	width: 25px;
+	height: 25;
+}
+
+nav {
+    float: left;
+    max-width: 100px;
+    margin: 0;
+    padding: 0;
+	padding-top: 30px;
+	
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+	
+}
+   
+nav ul a {
+    text-decoration: none;
+	color: black;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+	font-size: 25px;
+	
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #FAD7A0;
+    color: white;
+	max-width: 150px;
+}
+
+article {
+    margin-left: 50px;
+    border-left: 1px solid gray;
+    padding-left: 10px;
+	padding-bottom: 200px;
+    overflow: hidden;
+	float: left;
+}
+
+article h1 {
+	font-size: 40px;
+}
+
+.float_col1 {
+	float:left;
+	width: 275px;
+}
+
+.float_col2 {
+	float:right;
+	width: 400px;
+	margin-left: 200px;
+
+}
+
+section {
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+	<div><img src="spotlight.png" align="left"/ alt="SpotLights" height="200" width="200">
+	<h1>Booze Clues</h1></div>
+	
+</header>
+  
+<nav>
+  <ul>
+    <li><a href="GreenRoom.html">Green Room</a></li>
+    <li><a href="Peabodys.html">Peabodys</a></li>
+    <li><a href="Hobies.html">Hobies</a></li>
+	<li><a href="Monopole.html">Monopole</a></li>
+	<li><a href="518.html">Five1Eight</a></li>
+	<li><a href="AboutUs.html">About Us</a></li>
+  </ul>
+</nav>
+
+<article>
+	<div class="float_col1">
+  <h1>Five1Eight Night Club</h1>
+	Five1Eight is a new dance club that is a hit towards college kids. 
+	Downtown Plattsburgh's premier nightclub and lounge features the 
+	finest in DJ oriented entertainment. Locally owned and operated since August 2015.
+	
+	 <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="518.jpg" style="width:100%" height="300px">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="518(2).jpg" style="width:100%" height="300px">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="518(3).jpg" style="width:100%" height="295px">
+ </div> 
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+                                    
+</div>
+
+<div class="float_col2"><h1>Bar Specials </h1>
+	<p>Thursdays - College Night: $3 Well Drinks, $4 Pitchers & $1 Drafts</p>
+	<p>Fridays - <i>Ladies Night</i>No Cover for ladies ALL night, No Cover for 
+	men until 12pm</p>
+	<p>Saturdays - $3 Rum and Cokes</p>
+	</div>
+	
+ 
+ </article>
+ 
+<footer>
+	<a href="#">Contact Us</a>
+	<p><a href="#">Bar Hours</a></p>
+	
+
+</footer>
+
+</div>
+
+</body>
+</html>
+
+
+___________________________________________________________________________________________________________________________________________
+*** Peabodys.html PAGE ***
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header {
+    padding-bottom: 10px;
+	padding-top: 10px;
+    color: white;
+    background-color: #590000;
+    clear: left;
+	font-size: 15px;
+	text-align: center;
+}
+
+footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    	border-top-width: 1px;
+	text-align: left;
+    	background-repeat: repeat-x;
+	background-image:url("foam.jpg")
+}
+
+
+img header {
+	width: 25px;
+	height: 25;
+}
+
+nav {
+    float: left;
+    max-width: 100px;
+    margin: 0;
+    padding: 0;
+	padding-top: 30px;
+	
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+	
+}
+   
+nav ul a {
+    text-decoration: none;
+	color: black;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+	font-size: 25px;
+	
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #FAD7A0;
+    color: white;
+	max-width: 150px;
+}
+
+article {
+    margin-left: 50px;
+    border-left: 1px solid gray;
+    padding-left: 10px;
+	padding-bottom: 200px;
+    overflow: hidden;
+	float: left;
+}
+
+article h1 {
+	font-size: 40px;
+}
+
+.float_col1 {
+	float:left;
+	width: 300px;
+}
+
+.float_col2 {
+	float:right;
+	width: 400px;
+	margin-left: 200px;
+
+}
+
+section {
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+	<div><img src="spotlight.png" align="left"/ alt="SpotLights" height="200" width="200">
+	<h1>Booze Clues</h1></div>
+	
+</header>
+  
+<nav>
+  <ul>
+    <li><a href="GreenRoom.html">Green Room</a></li>
+    <li><a href="Peabodys.html">Peabodys</a></li>
+    <li><a href="Hobies.html">Hobies</a></li>
+	<li><a href="Monopole.html">Monopole</a></li>
+	<li><a href="518.html">Five1Eight</a></li>
+	<li><a href="AboutUs.html">About Us</a></li>
+  </ul>
+</nav>
+
+<article>
+	<div class="float_col1">
+  <h1>Peabody's Bar</h1>
+	Peabody's is one of the best college bars downtown consisting of two bars, one located 
+	on the first floor and another on the second - both have shelves of liquor and cold beers on tap. 
+	The prices are fair and the dance floor is always fun. Come down on Monday's and participate
+    in the Chug-a-Mug special.
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="peabodys wed.png" style="width:100%" height="300px">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="bloodymary.jpg" style="width:100%" height="300px">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="bar.jpg" style="width:100%" height="295px">
+ </div> 
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    
+</div>
+
+<div class="float_col2"><h1>Bar Specials </h1>
+	<p>Sundays - NFL Sunday: 50cent wings, make your own Bloody Mary, homestyle chili and Burgers begin at Noon.</p>
+	<p>Mondays - $5 Bloody Marys & $1 OFF burgers ALL DAY!</p>
+	<p>Tuesdays - Buckets of Beer: 5 domestic beers for $15 & $3 shot specials(10pm)</p>
+	<p>Wednesdays - 32oz Bionic Beaver special starting at 10pm - 1am</p>
+	<p>Thursdays - $5 Busch Pitchers, $4 Drink Specials, $3 Shot Specials</p>
+	<p>Fridays - N/A
+	<p>Saturdays - $5 Double Mixed Drink Specials, 50cent OFF Select Craft Beers, $3 Shot Specials</p>
+	
+	
+	
+	
+	
+	</div>
+	
+ 
+ </article>
+ 
+<footer>
+	<a href="#">Contact Us</a>
+	<p><a href="#">Bar Hours</a></p>
+	
+
+
+
+</footer>
+
+</div>
+
+</body>
+</html>
+__________________________________________________________________________________________________________________________
+*** Home Page***
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+img header{
+	width: 35px;
+	height: 35px;
+}	
+
+
+div.container {
+    width: 95%;
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-top: 0;
+	padding-bottom: 0;
+    
+}
+
+header {
+    padding-bottom: 0px;
+	padding-top: 0px;
+    color: black;
+	border-bottom: solid grey;
+	border-bottom-width: 1px;
+    clear: left;
+	font-size: 18px;
+	text-align: center;
+	font-family: "Courier New", Courier;
+}
+
+footer {
+    padding: 1em;
+    color: black;
+    border-top: solid grey;
+	border-top-width: 1px;
+	text-align: left;
+	background-repeat: repeat-x;
+	background-image:url("foam.jpg")
+    
+}
+
+
+nav {
+    float: left;
+    max-width: 5px;
+    margin: 0;
+    padding: 0;
+	padding-top: 30px;
+	padding-left: 75px;
+	
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+	
+}
+   
+nav ul a {
+    text-decoration: none;
+	color: black;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+	font-size: 25px;
+	
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #FAD7A0;
+    color: white;
+	max-width: 150px;
+}
+
+article {
+    margin-left: 250px;
+	margin-top: 0px;
+    border-left: 1px solid grey;
+	padding-bottom: 150px;
+    overflow: hidden;
+	text-align: justify;
+	font-size:15px;
+	padding-left: 10px;
+	
+	
+}
+
+article h1 {
+	font-size: 20px;
+}
+
+.float_col1 {
+	float:left;
+	width: 450px;
+}
+
+.float_col2 {
+	float:right;
+	width: 400px;
+	margin-right: 175px;
+	
+
+}
+
+section {
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #162b4f;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #162b4f;
+}
+
+
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+/* The "Forgot Password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+	
+	<div><img src="spotlight.png" align="left"/ alt="spotlight" height="225" width="225">
+	<h1>Booze Clues</h1></div>
+	
+</header>
+
+<article>
+
+	<h1> Login to Verify Age(Must be 21 +)</h1>
+	<form action="action_page.php">
+
+  <div class="container">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <input type="checkbox" checked="checked"> Remember Me
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">Password?</a></span>
+  </div>
+</form>
+
+
+ </article>
+ 
+<footer>
+	<a href="#">Contact Us</a>
+	<p><a href="#">Bar Hours</a></p>
+	
+
+
+
+</footer>
+
+</div>
+
+</body>
+</html>
+
+________________________________________________________________________________________________________________________________________________
+*Green Room Page*
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+div.container {
+    width: 75%;
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-top: 0;
+	padding-bottom: 0;
+    
+}
+
+header {
+    padding-bottom: 0px;
+	padding-top: 0px;
+    color: black;
+	border-bottom: solid grey;
+	border-bottom-width: 1px;
+    clear: left;
+	font-size: 18px;
+	text-align: center;
+	font-family: "Courier New", Courier;
+}
+
+footer {
+    padding: 1em;
+    color: black;
+    border-top: solid grey;
+	border-top-width: 1px;
+	text-align: left;
+	background-repeat: repeat-x;
+	background-image:url("foam.jpg")
+    
+}
+
+
+nav {
+    float: left;
+    max-width: 5px;
+    margin: 0;
+    padding: 0;
+	padding-top: 30px;
+	padding-left: 75px;
+	
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+	
+}
+   
+nav ul a {
+    text-decoration: none;
+	color: black;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+	font-size: 25px;
+	
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #FAD7A0;
+    color: white;
+	max-width: 150px;
+}
+
+article {
+    margin-left: 250px;
+	margin-top: 0px;
+    border-left: 1px solid grey;
+	padding-bottom: 150px;
+    overflow: hidden;
+	text-align: justify;
+	font-size:15px;
+	padding-left: 10px;
+	
+	
+}
+
+article h1 {
+	font-size: 20px;
+}
+
+.float_col1 {
+	float:left;
+	width: 450px;
+}
+
+.float_col2 {
+	float:right;
+	width: 400px;
+	margin-right: 175px;
+	
+
+}
+
+section {
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+.mySlides {display:none}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+	<h1>Booze Clues</h1></div>
+	
+</header>
+  
+<nav>
+  <ul>
+  <li><a href="Home.html">Home</a></li>
+    <li><a href="GreenRoom.html">Green Room</a></li>
+    <li><a href="Peabodys.html">Peabodys</a></li>
+    <li><a href="Hobies.html">Hobies</a></li>
+	<li><a href="Monopole.html">Monopole</a></li>
+	<li><a href="518.html">Five1Eight</a></li>
+	<li><a href="AboutUs.html">About Us</a></li>
+  </ul>
+</nav>
+
+<article>
+	<div class="float_col1">
+  <h1>Green Room</h1>
+	Green Room has something for everyone. Whether you want to play darts, relax and socialize on the sofas or dance the night away Green Room is the place for you. 
+    Known for their Fishbowls on Wednesdays and you cannot leave without trying a nerd bucket. Equipped with two full Bars and one of the biggest dancefloors in Plattsburgh,
+    the versatility of Green Room is unmatched. Guaranteed that you will have a great time, no matter what you are looking for.
+     
+     <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="green room.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="pool table-Green.jpg" style="width:100%" height="300px">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="outside green.jpg" style="width:100%" height="295px">
+ </div> 
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+     
+     
+     
+</div>
+
+<div class="float_col2"><h1>Bar Specials </h1>
+    <p>Monday - $2.50 Domestic Bottles, $2.50 Rum & Coke, $3 Fireball, $8 Margarita bucket</p>
+    <p>Wednesday - $2 16oz Busch Lights, $2.50 Rum & Coke, $2.50 Kamikaze Shot, $8 Fishbowls.</p>
+	<p>Thursdays - $1 off all craft drafts, $2 Busch Light drafts, $2 vodka drinks, $3 fireball shots, $8 fish bowls. </p>
+	<p>Fridays - $2 Busch Lights, $2.50 Rum & Coke, $2.50 Lemon Drop shots</p>
+	<p>Saturdays - $2 Vodka Well Drinks, $2 Busch Lights, $3.50 Fireball Shots and drink specials all night.</p>
+	
+	
+	</div>
+	
+ 
+ </article>
+ 
+<footer>
+	<a href="#">Contact Us</a>
+	<p><a href="#">Bar Hours</a></p>
+
+</footer>
+
+</div>
+
+</body>
+</html>
+
+________________________________________________________________________________________________________________________________________________
+*Monopole Page*
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+div.container {
+    width: 75%;
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-top: 0;
+	padding-bottom: 0;
+    
+}
+
+header {
+    padding-bottom: 0px;
+	padding-top: 0px;
+    color: black;
+	border-bottom: solid grey;
+	border-bottom-width: 1px;
+    clear: left;
+	font-size: 18px;
+	text-align: center;
+	font-family: "Courier New", Courier;
+}
+
+footer {
+    padding: 1em;
+    color: black;
+    border-top: solid grey;
+	border-top-width: 1px;
+	text-align: left;
+	background-repeat: repeat-x;
+	background-image:url("foam.jpg")
+    
+}
+
+
+nav {
+    float: left;
+    max-width: 5px;
+    margin: 0;
+    padding: 0;
+	padding-top: 30px;
+	padding-left: 75px;
+	
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+	
+}
+   
+nav ul a {
+    text-decoration: none;
+	color: black;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+	font-size: 25px;
+	
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #FAD7A0;
+    color: white;
+	max-width: 150px;
+}
+
+article {
+    margin-left: 250px;
+	margin-top: 0px;
+    border-left: 1px solid grey;
+	padding-bottom: 150px;
+    overflow: hidden;
+	text-align: justify;
+	font-size:15px;
+	padding-left: 10px;
+	
+	
+}
+
+article h1 {
+	font-size: 20px;
+}
+
+.float_col1 {
+	float:left;
+	width: 450px;
+}
+
+.float_col2 {
+	float:right;
+	width: 400px;
+	margin-right: 175px;
+	
+
+}
+
+section {
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+	<h1>Booze Clues</h1></div>
+	
+</header>
+  
+<nav>
+  <ul>
+  <li><a href="Home.html">Home</a></li>
+    <li><a href="GreenRoom.html">Green Room</a></li>
+    <li><a href="Peabodys.html">Peabodys</a></li>
+    <li><a href="Hobies.html">Hobies</a></li>
+	<li><a href="Monopole.html">Monopole</a></li>
+	<li><a href="518.html">Five1Eight</a></li>
+	<li><a href="AboutUs.html">About Us</a></li>
+  </ul>
+</nav>
+
+<article>
+	<div class="float_col1">
+  <h1>Monopole</h1>
+    Monopole is Plattsburgh's oldest bar. Established in 1898, it sets the standard for
+    all other bars in Plattsburgh. A common watering hole for both college students
+    and local residents. Most notibly know for Wing Wednesday and Football Sunday.
+    With drink specials everyday and live music on the second floor, Monpole is one of 
+	Plattsburgh's premier downtown destinations.
+	
+	 <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="monopole.jpg" style="width:100%" height="300px">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="monopole(2).jpg" style="width:100%" height="300px">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="monopole(3).jpg" style="width:100%" height="295px">
+ </div> 
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+                                    
+</div>
+
+<div class="float_col2"><h1>Bar Specials </h1>
+    <p>Sunday - $3 Sierra Nevada pints ALL DAY.</p>
+    <p>Monday - $3.50 Lagunitas Pints, $2.50 pitchers & $2.50 bar drinks.</p>
+    <p>Tuesday - Fireball Night - $2.50 Fireball shots, $2.50 Pitchers, $2.50 Flavored Vodka Drinks, $2.50 Yuengling Pints.</p>
+    <p>Wednesday - Wing Night 60-cent wings. $2.50 pitchers, $3.00 Sierra Nevada Pints $2.50 Sailor Jerry Drinks, $2.50 Fireball shots.</p>
+	<p>Thursdays - Flight Night beer flights 3 for $5 and 4 for $7. $2.50 Captain Morgan Drinks, $2.50 Jack Drinks & Bud Bottles.</p>
+	<p>Fridays - Trivia Night $2.50 Yuengling Pints.</p>
+	<p>Saturdays - $2.50 pitchers, $3.00 Sierra Nevada Pints.</p>
+	
+	
+	</div>
+	
+ 
+ </article>
+ 
+<footer>
+	<a href="#">Contact Us</a>
+	<p><a href="#">Bar Hours</a></p>
+	
+</footer>
+
+</div>
+
+</body>
+</html>
+________________________________________________________________________________________________________________________________________
+***About Us Page***
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+div.container {
+    width: 75%;
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-top: 0;
+	padding-bottom: 0;
+    
+}
+
+header {
+    padding-bottom: 0px;
+	padding-top: 0px;
+    color: black;
+	border-bottom: solid grey;
+	border-bottom-width: 1px;
+    clear: left;
+	font-size: 18px;
+	text-align: center;
+	font-family: "Courier New", Courier;
+}
+
+footer {
+    padding: 1em;
+    color: black;
+    border-top: solid grey;
+	border-top-width: 1px;
+	text-align: left;
+	background-repeat: repeat-x;
+	background-image:url("foam.jpg")
+    
+}
+
+
+nav {
+    float: left;
+    max-width: 5px;
+    margin: 0;
+    padding: 0;
+	padding-top: 30px;
+	padding-left: 75px;
+	
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+	
+}
+   
+nav ul a {
+    text-decoration: none;
+	color: black;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+	font-size: 25px;
+	
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #FAD7A0;
+    color: white;
+	max-width: 150px;
+}
+
+article {
+    margin-left: 250px;
+	margin-top: 0px;
+    border-left: 1px solid grey;
+	padding-bottom: 150px;
+    overflow: hidden;
+	text-align: justify;
+	font-size:15px;
+	padding-left: 10px;
+	
+	
+}
+
+article h1 {
+	font-size: 20px;
+}
+
+.float_col1 {
+	float:left;
+	width: 450px;
+}
+
+.float_col2 {
+	float:right;
+	width: 400px;
+	margin-right: 175px;
+	
+
+}
+
+section {
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+	
+	<h1>Booze Clues</h1></div>
+	
+</header>
+  
+<nav>
+  <ul>
+  <li><a href="Home.html">Home</a></li>
+    <li><a href="GreenRoom.html">Green Room</a></li>
+    <li><a href="Peabodys.html">Peabodys</a></li>
+    <li><a href="Hobies.html">Hobies</a></li>
+	<li><a href="Monopole.html">Monopole</a></li>
+	<li><a href="518.html">Five1Eight</a></li>
+  </ul>
+</nav>
+
+<article>
+  <h1><center>About Us</center></h1>
+
+	Booze Clues is your go to webpage for all things nightlife in Plattsburgh New York.  Whether 
+	you’re looking to casually relax and get a drink with friends or dance the night away, 
+	Booze Clues can lead you in the right direction. Our goal is to direct all Plattsburgh 
+	residence to their ideal bar destination. We supply all the essential info like hours, 
+	drink specials, special events and much more. 
+
+	
+	Motto: If you want booze, we’ll leave the clues
+
+</div>
+
+
+ </article>
+ 
+<footer>
+	<a href="#">Contact Us</a>
+	<p><a href="#">Bar Hours</a></p>
+	
+</footer>
+
+</div>
+
+</body>
+</html>
+
+
+

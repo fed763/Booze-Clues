@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+img header{
+	width: 35px;
+	height: 35px;
+}	
+
+
+div.container {
+    width: 95%;
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-top: 0;
+	padding-bottom: 0;
+    
+}
+
+header {
+    padding-bottom: 0px;
+	padding-top: 0px;
+    color: black;
+	border-bottom: solid grey;
+	border-bottom-width: 1px;
+    clear: left;
+	font-size: 18px;
+	text-align: center;
+	font-family: "Courier New", Courier;
+}
+
+footer {
+    padding: 1em;
+    color: black;
+    border-top: solid grey;
+	border-top-width: 1px;
+	text-align: left;
+	background-repeat: repeat-x;
+	background-image:url("foam.jpg")
+    
+}
+
+
+nav {
+    float: left;
+    max-width: 5px;
+    margin: 0;
+    padding: 0;
+	padding-top: 30px;
+	padding-left: 75px;
+	
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+	
+}
+   
+nav ul a {
+    text-decoration: none;
+	color: black;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+	font-size: 25px;
+	
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #FAD7A0;
+    color: white;
+	max-width: 150px;
+}
+
+article {
+    margin-left: 250px;
+	margin-top: 0px;
+    border-left: 1px solid grey;
+	padding-bottom: 150px;
+    overflow: hidden;
+	text-align: justify;
+	font-size:15px;
+	padding-left: 10px;
+	
+	
+}
+
+article h1 {
+	font-size: 20px;
+}
+
+.float_col1 {
+	float:left;
+	width: 450px;
+}
+
+.float_col2 {
+	float:right;
+	width: 400px;
+	margin-right: 175px;
+	
+
+}
+
+section {
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #162b4f;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #162b4f;
+}
+
+
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+/* The "Forgot Password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+	
+	<div><img src="spotlight.png" align="left"/ alt="spotlight" height="225" width="225">
+	<h1>Booze Clues</h1></div>
+	
+</header>
+
+<article>
+
+	<h1> Login to Verify Age(Must be 21 +)</h1>
+	<form action="action_page.php">
+
+  <div class="container">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <input type="checkbox" checked="checked"> Remember Me
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">Password?</a></span>
+  </div>
+</form>
+
+
+ </article>
+ 
+<footer>
+	<a href="#">Contact Us</a>
+	<p><a href="#">Bar Hours</a></p>
+	
+
+
+
+</footer>
+
+</div>
+
+</body>
+</html>
