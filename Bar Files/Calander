@@ -1,0 +1,35 @@
+<style>
+
+ul {list-style-type: none;}
+
+body {font-family: Verdana,sans-serif;}
+
+.month {
+    padding-top: 10px;
+    width: 375px;
+    background: #1abc9c;
+    padding-bottom: 10px;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+

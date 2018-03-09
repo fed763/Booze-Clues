@@ -1,0 +1,258 @@
+Public Class Signup
+    Dim w As New System.IO.StreamWriter("E:\Booze Clues Project\Code\Users.txt")
+    Dim r As New System.IO.StreamReader("E:\Booze Clues Project\Code\Users.txt")
+
+
+
+    Private Sub btnSignup_Click(sender As Object, e As EventArgs) Handles btnSignup.Click
+
+
+        w.WriteLine(txtFirst.Text, "")
+        w.WriteLine(txtLast.Text, "")
+        w.WriteLine(txtUsername.Text, "")
+        w.WriteLine(txtPass.Text, "")
+
+
+        w.Close()
+
+
+    End Sub
+End Class
+____________________________________________________________________________________________________________________________________________________
+Imports System.Drawing
+Class Bars
+
+    Dim tt As New ToolTip()
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+
+        tt.SetToolTip(PictureBox3, "This bar is Five1Eight. Open on Thursdays, Fridays and Saturdays." & vbNewLine & "Most popular with students.")
+
+    End Sub
+
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
+
+        tt.SetToolTip(PictureBox4, "This is Green Room. Open 6 days a week. Closed on Tuesdays." & vbNewLine & "Ideal for dance and socialization.")
+
+    End Sub
+
+    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+
+        tt.SetToolTip(PictureBox5, "Monopole Bar. Open 7 days a week (Specific Hours)" & vbNewLine & " More of a hippy style Bar, local bands/shows.")
+
+    End Sub
+
+    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
+
+        tt.SetToolTip(PictureBox6, "Peabodies Bar. ")
+    End Sub
+
+    Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
+        Me.Hide()
+        Form1.Show()
+
+    End Sub
+
+    Private Sub btnMoreBars_Click(sender As Object, e As EventArgs) Handles btnMoreBars.Click
+        Me.Hide()
+        Bars2.Show()
+
+    End Sub
+
+    Private Sub btnRestu_Click(sender As Object, e As EventArgs) Handles btnRestu.Click
+        Me.Hide()
+        Restuarants.Show()
+
+    End Sub
+End Class
+
+
+
+__________________________________________________________________________________________________________________________________
+
+Public Class Bars2
+    Private Sub btnBars_Click(sender As Object, e As EventArgs) Handles btnBars.Click
+
+        Me.Hide()
+        Bars.Show()
+
+    End Sub
+
+    Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
+        Me.Hide()
+        Form1.Show()
+
+    End Sub
+
+    Private Sub btnRestu_Click(sender As Object, e As EventArgs) Handles btnRestu.Click
+        Me.Hide()
+        Restuarants.Show()
+
+
+    End Sub
+End Class
+
+_______________________________________________________________________________________________________________________________________________________
+
+
+ Private Sub pic518_DoubleClick(sender As Object, e As EventArgs) Handles pic518.DoubleClick
+
+        Detail.Show()
+        Detail.lblDetail.Text = "Five1Eight is a new dance club that is a" & vbNewLine &
+                                    "hit towardscollge kids. Downtown Plattsburgh's premier nightclub" & vbNewLine &
+                                    "and lounge featuring the finest in DJ oriented entertainment. Locally" & vbNewLine &
+                                    "owned and operated since August 2015." & vbNewLine &
+                                    "Hours: " & vbNewLine & " Thursday: 10:00PM - 2:00AM" & vbNewLine &
+                                    "Friday: 10:00PM - 2:00AM" & vbNewLine & " Saturday: 10:00PM - 2:00AM"
+        Me.Hide()
+
+
+    End Sub
+
+    Private Sub picGreenRoom_DoubleClick(sender As Object, e As EventArgs) Handles picGreenRoom.DoubleClick
+
+        Detail.Show()
+        Detail.lblDetail.Text = "Green Room a quelque chose pour tout le monde. Que vous vouliez jouer aux fléchettes, se détendre et" & vbNewLine &
+                                "de socialiser sur les canapés ou danser toute la nuit Green Room est l'endroit pour vous. Connus pour leur" & vbNewLine &
+                                "fishbowls les mercredis et vous ne pouvez pas partir sans essayer un seau nerd. Equipé de deux complète" & vb NewLine &
+                                "bars et un des plus grands dancefloors à Plattsburgh, la polyvalence de Green Room est incomparable," & vbNewLine &
+                                " garantir que vous aurez un grand temps, peu importe ce que vous cherchez." & vbNewLine &
+                                "Heures: " & vbNewLine & "Lundi: 6:00pm - 2:00am" & vbNewLine & "Mardi: Closed" & vbNewLine &
+                                "Mercredi-Jeudi: 8:00pm - 2am" & vbNewLine & "Vndredi-Samedi: 7:00pm - 2:00am" & vbNewLine & "Dimanche: 2:00pm - 10:00pm" & vbNewLine &
+        Me.Hide()
+
+    End Sub
+
+    Private Sub picMono_DoubleClick(sender As Object, e As EventArgs) Handles picMono.DoubleClick
+        Detail.Show()
+        Detail.lblDetail.Text = "Monopole is Plattsburgh's oldest bar. Established in 1898, it sets the standard for" & vbNewLine &
+                                "all other bars in Plattsburgh. A common watering hole for both college students" & vbNewLine &
+                                "and local residents. Most notibly know for Wing Wednesday and Football Sunday." & vbNewLine &
+                                "With drink specials everyday and live music on the second floor, Monpole is one of " & vbNewLine &
+                                "Plattsburgh's premier downtown destinations." & vbNewLine &
+                                "Hours: " & vbNewLine & "Monday - Saturday: 3:00pm - 2:00am" & vbNewLine &
+                                "Sunday: 1:00pm - 2:00am" & vbNewLine &
+        Me.Hide()
+    End Sub
+
+
+    Private Sub picPea_DoubleClick(sender As Object, e As EventArgs) Handles picPea.DoubleClick
+        Detail.Show()
+        Detail.lblDetail.Text = "Peabody's is one of the best college bars downtown." & vbNewLine &
+                                "There are two bars, one located on the first floor and another on the second" & vbNewLine &
+                                "both have shelves of liqour and cold beers on tap. The prices are fair" & vbNewLine & 
+                                "and the dance floor is always fun. Come down on Monday's and participate" & vbNewLine &
+                                "in the Chug-a-Mug special, $5 mixed drinks & $3 beers." & vbNewLine &
+                                "Hours: " & vbNewLine & "Monday-Saturday: 11:30 am to 2:00 am" 
+        Me.Hide()
+    End Sub
+End Class
+     
+     ______________________________________________________________________________________________________
+     
+     Public Class Bars2
+    Private Sub btnBars_Click(sender As Object, e As EventArgs) Handles btnBars.Click
+
+        Me.Hide()
+        Bars.Show()
+
+    End Sub
+
+    Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
+        Me.Hide()
+        Form1.Show()
+
+    End Sub
+
+    Private Sub btnRestu_Click(sender As Object, e As EventArgs) Handles btnRestu.Click
+        Me.Hide()
+        Restuarants.Show()
+
+
+    End Sub
+
+    Private Sub picArnies_DoubleClick(sender As Object, e As EventArgs) Handles picArnies.DoubleClick
+
+        Detail.Show()
+        Detail.lblDetail.Text = ""
+
+        Me.Hide()
+
+
+    End Sub
+
+    Private Sub picHobies_DoubleClick(sender As Object, e As EventArgs) Handles picHobies.DoubleClick
+
+        Detail.Show()
+        Detail.lblDetail.Text = "Hobie's Sports Den is a full service restaurant and bar in downtown Plattsburgh. " & vbNewLine &
+                                "Hobie's has 10 beers on tap, pizza, burgers, pasta specials everyday, and much more. " & vbNewLine &
+                                "Guests can come for lunch, dinner, or a drink with outside seating offered when weather " & vbNewLine &
+                                "permits. Hobie's offers take out or dine in waiter service for customers. The bar " & vbNewLine &
+                                "has a pool table and the pleasant vibe creates a warm atmosphere. 
+
+        Me.Hide()
+
+    End Sub
+End Class
+
+__________________________________________________________________________________________________________________________________
+
+******UPDATED DESCRIPTIONS******
+
+
+ Private Sub pic518_DoubleClick(sender As Object, e As EventArgs) Handles pic518.DoubleClick
+
+        System.Diagnostics.Process.Start("file:///E:/Project/518.html")
+
+
+    End Sub
+
+    Private Sub picGreenRoom_DoubleClick(sender As Object, e As EventArgs) Handles picGreenRoom.DoubleClick
+
+        System.Diagnostics.Process.Start("file:///E:/Project/GreenRoom.html")
+
+    End Sub
+
+    Private Sub picMono_DoubleClick(sender As Object, e As EventArgs) Handles picMono.DoubleClick
+        System.Diagnostics.Process.Start("file:///E:/Project/Monopole.html")
+    End Sub
+
+    Private Sub picPea_DoubleClick(sender As Object, e As EventArgs) Handles picPea.DoubleClick
+        
+        
+        System.Diagnostics.Process.Start("file:///E:/Project/Peabodys.html")
+    End Sub
+
+End Class
+
+___________________________________________________________________________________________________________________________________________________________
+
+
+Public Class Detail
+
+    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
+
+        Me.Close()
+
+    End Sub
+
+    Private Sub btnBars_Click(sender As Object, e As EventArgs) Handles btnBars.Click
+        Me.Hide()
+        Bars.Show()
+
+
+    End Sub
+
+    Private Sub btnRest_Click(sender As Object, e As EventArgs) Handles btnRest.Click
+        Me.Hide()
+        Restuarants.Show()
+
+    End Su
+End Class
+
+________________________________________________________________________________________________________________________________
+
+
+
+
+
