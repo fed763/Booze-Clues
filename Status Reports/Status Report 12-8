@@ -1,0 +1,19 @@
+I have been testing different ways to figure out how to connect the mobile Phone Gap application with the Desktop Application server
+and finally with some research I realized the problem that I was running into stemmed from my phone security preferences. After altering
+the preferences I was able to connect to the desktop app. and then proceded to build the application on the desktop to then be shown on
+the mobile application. After successfully linking the Booze Clues github repository to the PhoneGap application build page I did run 
+into a problem with the configure file. I am still working on fixing this problem because I found the configure file in the PhoneGap
+github repository and I am not too sure what needs to be changed. To my knowledge once I figure out the problem with the configure file
+the application should be up and running on the mobile device. 
+*****************************************************************************************************************************************
+I realized what the problem was with the configure file right after I posted this status update. Still tampering with the two application
+to get the Booze Clues app up and running on the mobile application.
+
+*****************************************************************************************************************************************
+As I got closer to getting the application running on the mobile platflorm I came across yet another problem that will halt the progress I
+was making with the program completely. Unfortunately through all of the research that I had done about the Phone Gap application I didn't 
+know that I needed a Apple Developer Certificate to complete the process of linking the application from the desktp to my mobile device. I
+had even looked into using Windows instead of IOS, btu both require you to spend money on a developer account. It is because of this that
+we will not be putting the Booze Cles website into an application based form. 
+
+-Patrick Collins

@@ -1,0 +1,8 @@
+Scrum Sprint Goals 10/10 - 10/24
+
+Our discussions with our customer have gone in many different directions over the course of this project, specifically the
+last two or three weeks, but we finally have a compromise that satisfies both parties. We redesigned the interface, removing
+the searchbar and drop down menues, and are going to implement interactive widgets that show a picture of the bar and when clicked upon 
+will bring you to the bars page. We beleive that going in this direction of working interactive components into our application, we will 
+be able to appeal to customer's idea of how the application should work. We also want to include a back to the top of the page button 
+that follows you as you scroll. Our hope is that this will make the application more user friendly and more attractive to the eye. 

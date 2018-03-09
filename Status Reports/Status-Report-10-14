@@ -1,0 +1,6 @@
+Status Report 10/14
+
+After the lastest meeting with Quantum, he suggested to redesign the interface to make it more user friendly and attractive to customers. 
+Instead of working with a searchbar and drop-down menus, we will make each bar its own wigdets. Each widget will have a picture of the 
+bar or it's logo. When clicked upon the widget will bring you to the bars page which will display the bars information. We also are
+planning to implment a back to the top search when scrolling. It may set us back temporarily but the end result will pay dividends.

@@ -1,0 +1,15 @@
+Scrum Sprint 10/24 - 11/7
+
+Goals:
+ To set up each bar's/ restarunats page when clicking the widget. Each page will have:
+        a description of the bar 
+        the address accompanied with a google maps screen shot 
+        a calender of special events
+        drink specials if it's a bar
+        menu's if it's a restarant 
+        inventory of drinks at a particular bar
+        
+ We also plan to start our database to store the user logins. As of right now when you sign in with your information it isn't saved and 
+ you have to re- signup everytime you try to login.
+ You will be able to create an account with a unique username and password that will allow you access to the app. The username and 
+ password will be stored in the database. We want to implement a way to keep other users from having the same sign in as someone else too.
